@@ -6,88 +6,103 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section
-        className="relative h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero.jpg')" }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
+{/* HERO */}
 
-        <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 md:px-10 py-6">
+<section
+  className="relative h-screen bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/hero.jpg')",
+  }}
+>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/45"></div>
 
-          <h1 className="text-white text-3xl font-bold">
-            HOTEL UMED
-          </h1>
+  {/* Navbar */}
+  <nav className="absolute top-0 left-0 right-0 z-30">
+    <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-6">
 
-          <div className="hidden md:flex gap-8 text-white font-medium">
+      <div>
+        <h1 className="text-3xl font-bold tracking-wide text-white">
+          HOTEL UMED
+        </h1>
 
-            <a href="#about">About</a>
+        <p className="text-green-300 uppercase tracking-[6px] text-xs mt-1">
+          Family Restaurant & Resto Bar
+        </p>
+      </div>
 
-            <a href="#gallery">Gallery</a>
+      <div className="hidden md:flex gap-10 text-white font-medium">
+        <a href="#about" className="hover:text-green-300 transition">
+          About
+        </a>
 
-            <a href="#contact">Contact</a>
+        <a href="#gallery" className="hover:text-green-300 transition">
+          Gallery
+        </a>
 
-          </div>
+ <a
+  href="#instagram"
+  className="hover:text-green-300 transition"
+>
+  Instagram
+</a>
+      </div>
 
-        </nav>
+    </div>
+  </nav>
 
-        <div className="relative z-10 h-full flex items-center justify-center">
+  {/* Hero Content */}
 
-          <div className="text-center px-6 max-w-5xl">
+  <div className="relative z-20 flex items-center justify-center h-full">
 
-            <p className="uppercase tracking-[8px] text-green-300">
-              WELCOME TO
-            </p>
+    <div className="text-center max-w-4xl px-6">
 
-            <h1 className="text-6xl md:text-8xl font-extrabold text-white mt-6">
-              Hotel Umed
-            </h1>
+      <p className="uppercase tracking-[8px] text-green-300 font-semibold">
+        EXPERIENCE NATURE
+      </p>
 
-            <h2 className="text-3xl md:text-5xl text-yellow-300 mt-4">
-              Resto Bar
-            </h2>
+      <h1 className="mt-6 text-6xl md:text-8xl font-black text-white leading-none">
+        Hotel Umed
+      </h1>
 
-            <p className="mt-10 text-lg md:text-2xl text-gray-100 leading-9">
+      <h2 className="mt-5 text-2xl md:text-4xl text-white font-light">
+        Family Restaurant • Resto Bar • Nature Dining
+      </h2>
 
-              Discover a peaceful destination surrounded by lush greenery,
-              open-air seating and delicious food.
+      <p className="mt-8 text-xl text-gray-200 leading-9 max-w-3xl mx-auto">
+        Enjoy delicious food, refreshing beverages and peaceful outdoor
+        dining.
+      </p>
 
-              Spend memorable moments with your family and friends while
-              enjoying nature.
+      <div className="flex flex-wrap justify-center gap-4 mt-10 px-4">
 
-            </p>
+        <a
+          href="tel:9284542620"
+          className="bg-green-700 hover:bg-green-800 px-8 py-4 rounded-full text-white font-semibold transition duration-300 shadow-xl"
+        >
+          📞 Call Now
+        </a>
 
-            <div className="flex flex-wrap justify-center gap-5 mt-12">
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Umed+Resto+Bar+Rumbhodi+Maharashtra"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-full text-white font-semibold transition duration-300"
+        >
+          📍 Get Directions
+        </a>
 
-              <a
-                href="https://wa.me/919284542620"
-                target="_blank"
-                className="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-full text-white font-semibold"
-              >
-                WhatsApp
-              </a>
+      </div>
 
-              <a
-                href="tel:9284542620"
-                className="bg-white text-green-800 px-8 py-4 rounded-full font-semibold"
-              >
-                Call Now
-              </a>
+    </div>
 
-              <a
-                href="https://www.instagram.com/umed_resto_bar?igsh=cW1qdWhuaHhkODE5"
-                target="_blank"
-                className="bg-pink-600 hover:bg-pink-700 px-8 py-4 rounded-full text-white font-semibold"
-              >
-                Instagram
-              </a>
+  </div>
 
-            </div>
+  {/* Scroll Down */}
 
-          </div>
+ 
 
-        </div>
-
-      </section>
+</section>
 
       {/* ABOUT */}
 
@@ -99,12 +114,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
           <Image
-            src="/gallery1.jpg"
-            alt="Hotel Umed"
-            width={700}
-            height={500}
-            className="rounded-3xl shadow-2xl"
-          />
+  src="/hero.jpg"
+  alt="Hotel Umed"
+  width={700}
+  height={500}
+  className="rounded-3xl shadow-2xl hover:scale-105 transition duration-500 object-cover"
+ />
 
           <div>
 
@@ -168,7 +183,7 @@ export default function Home() {
             Peaceful surroundings, delicious food and unforgettable memories.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-14">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
 
             <div className="bg-white rounded-3xl shadow-xl p-8">
 
@@ -221,53 +236,112 @@ export default function Home() {
       {/* PART 2 STARTS HERE */}
             {/* GALLERY SECTION */}
 
-      <section
-        id="gallery"
-        className="py-24 bg-white"
-      >
+      {/* GALLERY SECTION */}
 
-        <div className="max-w-7xl mx-auto px-6">
+<section
+  id="gallery"
+  className="py-28 bg-[#fafafa]"
+>
 
-          <h2 className="text-5xl font-bold text-center text-green-900">
-            Our Gallery
-          </h2>
-
-          <p className="text-center text-gray-600 mt-5 text-lg">
-            Beautiful moments, delicious food and peaceful surroundings.
-          </p>
+<div className="max-w-7xl mx-auto px-6">
 
 
-          <div className="grid md:grid-cols-3 gap-8 mt-14">
+<div className="text-center">
 
-            <Image
-              src="/gallery1.jpg"
-              alt="Hotel View"
-              width={600}
-              height={400}
-              className="rounded-3xl shadow-xl h-80 object-cover"
-            />
+<p className="uppercase tracking-[6px] text-green-700 font-semibold">
+Our Gallery
+</p>
 
-            <Image
-              src="/gallery2.jpg"
-              alt="Food"
-              width={600}
-              height={400}
-              className="rounded-3xl shadow-xl h-80 object-cover"
-            />
+<h2 className="text-5xl md:text-6xl font-bold text-green-900 mt-4">
+Moments At Hotel Umed
+</h2>
 
-            <Image
-              src="/gallery3.jpg"
-              alt="Outdoor Seating"
-              width={600}
-              height={400}
-              className="rounded-3xl shadow-xl h-80 object-cover"
-            />
+<p className="mt-6 text-gray-600 text-lg">
+A beautiful place for food, nature and unforgettable evenings.
+</p>
 
-          </div>
+</div>
 
-        </div>
 
-      </section>
+<div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-16">
+
+
+{/* Big Image */}
+
+<div className="md:col-span-2 md:row-span-2">
+
+<Image
+src="/gallery4.jpg"
+alt="Hotel Umed"
+width={900}
+height={900}
+className="w-full h-[550px] object-cover rounded-[35px] shadow-2xl hover:scale-[1.02] transition duration-500"
+/>
+
+</div>
+
+
+
+<div>
+
+<Image
+src="/gallery1.jpg"
+alt="Hotel View"
+width={600}
+height={400}
+className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+/>
+
+</div>
+
+
+
+<div>
+
+<Image
+src="/gallery2.jpg"
+alt="Food"
+width={600}
+height={400}
+className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+/>
+
+</div>
+
+
+
+<div>
+
+<Image
+src="/gallery3.jpg"
+alt="Outdoor"
+width={600}
+height={400}
+className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+/>
+
+</div>
+
+
+
+<div>
+
+<Image
+src="/gallery5.jpg"
+alt="Resto Bar"
+width={600}
+height={400}
+className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+/>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
 {/* MENU SECTION */}
 
 <section className="py-24 bg-white">
@@ -328,18 +402,7 @@ export default function Home() {
     </div>
 
 
-    <div className="text-center mt-12">
-
-      <a
-        href="https://wa.me/919284542620?text=Hello%20Hotel%20Umed,%20I%20want%20to%20know%20the%20menu."
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block bg-green-700 text-white px-10 py-4 rounded-full font-bold"
-      >
-        Ask For Menu On WhatsApp
-      </a>
-
-    </div>
+   
 
 
   </div>
@@ -559,53 +622,101 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
 
-      <section
-        id="contact"
-        className="py-24 bg-green-900 text-white"
-      >
-
-        <div className="max-w-5xl mx-auto px-6 text-center">
+      
 
 
-          <h2 className="text-5xl font-bold">
-            Reserve Your Table
-          </h2>
+<section id="instagram" className="py-24 bg-green-50 text-center">
+
+  <div className="max-w-5xl mx-auto px-6">
+
+    <h2 className="text-5xl font-bold text-green-900">
+      Follow Hotel Umed
+    </h2>
+
+    <p className="mt-6 text-xl text-gray-600">
+      Explore our food, ambience and memorable moments.
+    </p>
+
+    <a
+      href="https://www.instagram.com/umed_resto_bar/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mt-10 bg-white text-green-900 px-12 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition"
+    >
+      📸 Follow Instagram
+    </a>
+
+  </div>
+
+</section>
+{/* NEARBY PLACES SECTION */}
+
+{/* NEARBY PLACES SECTION */}
+
+<section className="py-24 bg-green-50">
+
+  <div className="max-w-5xl mx-auto px-6">
+
+    <h2 className="text-5xl font-bold text-center text-green-900">
+      Explore Nearby Places
+    </h2>
+
+    <p className="text-center mt-5 text-gray-600 text-lg">
+      Enjoy your visit to Hotel Umed while exploring beautiful destinations nearby.
+    </p>
 
 
-          <p className="mt-6 text-xl">
-            Call us or WhatsApp for booking and enquiries.
-          </p>
+    <div className="grid md:grid-cols-2 gap-10 mt-14">
 
 
-          <div className="flex justify-center gap-5 mt-10 flex-wrap">
+      <div className="bg-white rounded-3xl shadow-xl p-10 text-center">
 
-
-            <a
-              href="https://wa.me/919284542620"
-              target="_blank"
-              className="bg-green-500 px-10 py-4 rounded-full font-bold"
-            >
-              WhatsApp Booking
-            </a>
-
-
-            <a
-              href="tel:9284542620"
-              className="bg-white text-green-900 px-10 py-4 rounded-full font-bold"
-            >
-              Call Now
-            </a>
-
-
-          </div>
-
-
+        <div className="text-6xl">
+          🌊
         </div>
 
-      </section>
+        <h3 className="text-3xl font-bold mt-5 text-green-900">
+          Randha Falls
+        </h3>
+
+        <p className="text-green-700 font-semibold mt-3">
+          Approx. 21 km from Hotel Umed
+        </p>
+
+        <p className="mt-4 text-gray-600">
+          A beautiful waterfall destination surrounded by nature.
+        </p>
+
+      </div>
 
 
 
+      <div className="bg-white rounded-3xl shadow-xl p-10 text-center">
+
+        <div className="text-6xl">
+          🌄
+        </div>
+
+        <h3 className="text-3xl font-bold mt-5 text-green-900">
+          Bhandardara
+        </h3>
+
+        <p className="text-green-700 font-semibold mt-3">
+          Approx. 27 km from Hotel Umed
+        </p>
+
+        <p className="mt-4 text-gray-600">
+          Scenic lakes, mountains and peaceful natural surroundings.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
       {/* FOOTER */}
 
       <footer className="bg-black text-white py-8 text-center">
@@ -625,9 +736,9 @@ export default function Home() {
         href="https://wa.me/919284542620"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-full shadow-2xl font-bold flex items-center gap-2"
+        className="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white w-16 h-16 rounded-full justify-center shadow-2xl font-bold flex items-center gap-2"
       >
-        💬 WhatsApp
+        💬
       </a>
 
 

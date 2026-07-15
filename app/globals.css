@@ -46,3 +46,21 @@ img:hover {
 .title {
   color: #1b5e20;
 }
+body {
+  font-family: var(--font-body);
+  background: #ffffff;
+  color: #1b4332;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+html {
+  scroll-behavior: smooth;
+}
