@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <main className="min-h-screen bg-white">
 
@@ -19,7 +23,7 @@ export default function Home() {
 
   {/* Navbar */}
   <nav className="absolute top-0 left-0 right-0 z-30">
-    <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-6">
+    <div className="max-w-7xl mx-auto flex justify-between items-center px-5 md:px-8 py-6">
 
       <div>
         <h1 className="text-3xl font-bold tracking-wide text-white">
@@ -31,23 +35,52 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="hidden md:flex gap-10 text-white font-medium">
-        <a href="#about" className="hover:text-green-300 transition">
-          About
-        </a>
+    {/* Desktop Menu */}
+<div className="hidden md:flex gap-10 text-white font-medium">
 
-        <a href="#gallery" className="hover:text-green-300 transition">
-          Gallery
-        </a>
+  <a href="#about" className="hover:text-green-300 transition">
+    About
+  </a>
 
- <a
-  href="#instagram"
-  className="hover:text-green-300 transition"
+  <a href="#gallery" className="hover:text-green-300 transition">
+    Gallery
+  </a>
+
+  <a href="#instagram" className="hover:text-green-300 transition">
+    Instagram
+  </a>
+
+</div>
+
+
+{/* Mobile Menu Button */}
+<button
+  onClick={() => setOpenMenu(!openMenu)}
+  className="md:hidden text-white text-3xl"
 >
-  Instagram
-</a>
-      </div>
+  ☰
+</button>
+{openMenu && (
+  <div className="md:hidden bg-black/80 text-white absolute top-20 left-0 right-0 py-6 text-center space-y-5">
 
+    <a href="#about" onClick={()=>setOpenMenu(false)}>
+      About
+    </a>
+
+    <a href="#gallery" onClick={()=>setOpenMenu(false)}>
+      Gallery
+    </a>
+
+    <a
+      href="https://www.instagram.com/umed_resto_bar/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram
+    </a>
+
+  </div>
+)}
     </div>
   </nav>
 
@@ -61,7 +94,7 @@ export default function Home() {
         EXPERIENCE NATURE
       </p>
 
-      <h1 className="mt-6 text-6xl md:text-8xl font-black text-white leading-none">
+      <h1 className="mt-6 text-5xl md:text-8xl font-black text-white leading-none">
         Hotel Umed
       </h1>
 
@@ -640,8 +673,8 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
     <a
       href="https://www.instagram.com/umed_resto_bar/"
       target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block mt-10 bg-white text-green-900 px-12 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition"
+      rel="noopener noreferrer"className="inline-block mt-10 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-white px-12 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition"
+      
     >
       📸 Follow Instagram
     </a>
