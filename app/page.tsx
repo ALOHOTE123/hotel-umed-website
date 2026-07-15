@@ -23,7 +23,7 @@ export default function Home() {
 
   {/* Navbar */}
   <nav className="absolute top-0 left-0 right-0 z-30">
-    <div className="max-w-7xl mx-auto flex justify-between items-center px-5 md:px-8 py-6">
+    <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-8 py-6">
 
       <div>
         <h1 className="text-3xl font-bold tracking-wide text-white">
@@ -36,17 +36,27 @@ export default function Home() {
       </div>
 
     {/* Desktop Menu */}
-<div className="hidden md:flex gap-10 text-white font-medium">
+{/* Top Right Menu */}
+<div className="flex items-center gap-5 md:gap-10 text-white font-medium text-sm md:text-base">
 
-  <a href="#about" className="hover:text-green-300 transition">
+  <a 
+    href="#about" 
+    className="hover:text-green-300 transition"
+  >
     About
   </a>
 
-  <a href="#gallery" className="hover:text-green-300 transition">
+  <a 
+    href="#gallery" 
+    className="hover:text-green-300 transition"
+  >
     Gallery
   </a>
 
-  <a href="#instagram" className="hover:text-green-300 transition">
+  <a 
+    href="#instagram" 
+    className="hover:text-green-300 transition"
+  >
     Instagram
   </a>
 
@@ -54,33 +64,7 @@ export default function Home() {
 
 
 {/* Mobile Menu Button */}
-<button
-  onClick={() => setOpenMenu(!openMenu)}
-  className="md:hidden text-white text-3xl"
->
-  ☰
-</button>
-{openMenu && (
-  <div className="md:hidden bg-black/80 text-white absolute top-20 left-0 right-0 py-6 text-center space-y-5">
 
-    <a href="#about" onClick={()=>setOpenMenu(false)}>
-      About
-    </a>
-
-    <a href="#gallery" onClick={()=>setOpenMenu(false)}>
-      Gallery
-    </a>
-
-    <a
-      href="https://www.instagram.com/umed_resto_bar/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Instagram
-    </a>
-
-  </div>
-)}
     </div>
   </nav>
 
