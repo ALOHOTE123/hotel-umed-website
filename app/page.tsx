@@ -82,11 +82,11 @@ export default function Home() {
         Hotel Umed
       </h1>
 
-      <h2 className="mt-5 text-2xl md:text-4xl text-white font-light">
+      <h2 className="mt-4 text-xl md:text-4xl text-white font-light leading-relaxed">
         Family Restaurant • Resto Bar • Nature Dining
       </h2>
 
-      <p className="mt-8 text-xl text-gray-200 leading-9 max-w-3xl mx-auto">
+      <p className="mt-6 text-base md:text-xl text-gray-200 leading-7 md:leading-9 max-w-3xl mx-auto">
         Enjoy delicious food, refreshing beverages and peaceful outdoor
         dining.
       </p>
@@ -657,7 +657,7 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
     <a
       href="https://www.instagram.com/umed_resto_bar/"
       target="_blank"
-      rel="noopener noreferrer"className="inline-block mt-10 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-white px-12 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition"
+      rel="noopener noreferrer"className="inline-block mt-10 bg-black text-white px-12 py-4 rounded-full font-bold shadow-xl hover:bg-green-700 hover:scale-105 transition duration-300"
       
     >
       📸 Follow Instagram
