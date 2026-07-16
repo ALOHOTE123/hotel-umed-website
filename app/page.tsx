@@ -745,7 +745,7 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
 <div className="bg-white rounded-3xl shadow-xl p-10 text-center">
 
   <div className="text-6xl">
-    💦
+    🌊
   </div>
 
   <h3 className="text-3xl font-bold mt-5 text-green-900">
@@ -802,7 +802,7 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
 <div className="bg-white rounded-3xl shadow-xl p-10 text-center">
 
   <div className="text-6xl">
-    ⛰
+    🏯
   </div>
 
   <h3 className="text-3xl font-bold mt-5 text-green-900">
