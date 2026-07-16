@@ -372,7 +372,7 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
     </p>
 
 
-    <div className="grid md:grid-cols-2 gap-10 mt-14">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
 
 
       <div className="bg-green-50 rounded-3xl shadow-xl p-10">
@@ -682,7 +682,25 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
 
     <div className="grid md:grid-cols-2 gap-10 mt-14">
 
+<div className="bg-white rounded-3xl shadow-xl p-10 text-center">
 
+  <div className="text-6xl">
+    🌊
+  </div>
+
+  <h3 className="text-3xl font-bold mt-5 text-green-900">
+    Vithe Waterfall
+  </h3>
+
+  <p className="text-green-700 font-semibold mt-3">
+    Approx. 4.2 km from Hotel Umed
+  </p>
+
+  <p className="mt-4 text-gray-600">
+    A beautiful nearby waterfall, perfect for a quick nature stop during your visit.
+  </p>
+
+</div>
       <div className="bg-white rounded-3xl shadow-xl p-10 text-center">
 
         <div className="text-6xl">
@@ -724,7 +742,82 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
         </p>
 
       </div>
+<div className="bg-white rounded-3xl shadow-xl p-10 text-center">
 
+  <div className="text-6xl">
+    💦
+  </div>
+
+  <h3 className="text-3xl font-bold mt-5 text-green-900">
+    Umbrella Falls
+  </h3>
+
+  <p className="text-green-700 font-semibold mt-3">
+    Approx. 30 km from Hotel Umed
+  </p>
+
+  <p className="mt-4 text-gray-600">
+    A seasonal waterfall near Wilson Dam, famous for its umbrella-shaped cascade during the monsoon.
+  </p>
+
+</div>
+<div className="bg-white rounded-3xl shadow-xl p-10 text-center">
+
+  <div className="text-6xl">
+    🏰
+  </div>
+
+  <h3 className="text-3xl font-bold mt-5 text-green-900">
+    Ratangad Fort
+  </h3>
+
+  <p className="text-green-700 font-semibold mt-3">
+    Approx. 39 km from Hotel Umed
+  </p>
+
+  <p className="mt-4 text-gray-600">
+    An ancient hill fort offering breathtaking trekking trails and panoramic Sahyadri mountain views.
+  </p>
+
+</div>
+<div className="bg-white rounded-3xl shadow-xl p-10 text-center">
+
+  <div className="text-6xl">
+    🏞
+  </div>
+
+  <h3 className="text-3xl font-bold mt-5 text-green-900">
+    Sandhan Valley
+  </h3>
+
+  <p className="text-green-700 font-semibold mt-3">
+    Approx. 50 km from Hotel Umed
+  </p>
+
+  <p className="mt-4 text-gray-600">
+    Popular for canyon trekking, camping and its spectacular rocky landscape in the Sahyadris.
+  </p>
+
+</div>
+<div className="bg-white rounded-3xl shadow-xl p-10 text-center">
+
+  <div className="text-6xl">
+    ⛰
+  </div>
+
+  <h3 className="text-3xl font-bold mt-5 text-green-900">
+    Harishchandragad Fort
+  </h3>
+
+  <p className="text-green-700 font-semibold mt-3">
+    Approx. 50 km from Hotel Umed
+  </p>
+
+  <p className="mt-4 text-gray-600">
+    One of Maharashtra's most famous trekking destinations, known for the stunning Konkan Kada viewpoint.
+  </p>
+
+</div>
 
     </div>
 
