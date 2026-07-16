@@ -352,7 +352,15 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
 />
 
 </div>
-
+<div>
+  <Image
+    src="/gallery6.jpg"
+    alt="Hotel Umed"
+    width={600}
+    height={400}
+    className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+  />
+</div>
 
 </div>
 
