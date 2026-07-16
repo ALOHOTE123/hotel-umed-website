@@ -810,7 +810,7 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
   </h3>
 
   <p className="text-green-700 font-semibold mt-3">
-    Approx. 50 km from Hotel Umed
+    Approx. 55 km from Hotel Umed
   </p>
 
   <p className="mt-4 text-gray-600">
