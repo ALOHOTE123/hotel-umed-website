@@ -384,7 +384,6 @@ className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transi
         <ul className="mt-6 space-y-4 text-gray-700 text-lg">
 
           <li>• Maharashtrian Specialities</li>
-          <li>• Chinese Cuisine</li>
           <li>• Starters</li>
           <li>• Main Course</li>
           <li>• Family Combos</li>
