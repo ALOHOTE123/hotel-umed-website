@@ -299,17 +299,7 @@ className="w-full h-[550px] object-cover rounded-[35px] shadow-2xl hover:scale-[
 
 
 
-<div>
 
-<Image
-src="/gallery1.jpg"
-alt="Hotel View"
-width={600}
-height={400}
-className="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
-/>
-
-</div>
 
 
 
